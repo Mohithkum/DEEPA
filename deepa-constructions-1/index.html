@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="DEEPA CONSTRUCTIONS :Born To Build" />
+    <meta property="og:image" content="deepa-constructions-1.png" />
+
+
+    <title>Deepa Constructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+       body{
+        cursor: pointer;
+       }
+        .main-top{
+            display:flex;
+            
+            justify-content:space-between;
+            z-index:2;
+            color:black;
+           
+        }
+        .main-top-list{
+            display:flex;
+            
+            justify-content:space-between;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 0; /* Optional: Removes any default padding from the left */
+        }
+        .main-top-info{
+            gap:40px;
+        }
+        .top-info-box1{
+            gap:20px;
+        }
+        .top-info-box2{
+         
+           gap:20px;
+        }
+        .navbar{
+            z-index:2;
+        }
+        .brand-logo{
+            width:200px;
+            height:110px;
+            object-position:center;
+            object-fit:cover;
+        }
+        /* Custom styles for the navbar toggler */
+.navbar-toggler {
+    background-color: #8bc349; /* Black background */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove the default icon */
+}
+
+.navbar-toggler::after {
+    content: '';
+    display: block;
+    width: 30px; /* Adjust width */
+    height: 3px; /* Adjust thickness */
+    background-color: white; /* White color for the bar */
+    position: relative;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    position: relative;
+    display: block;
+    width: 30px; /* Adjust width */
+    height: 3px; /* Adjust thickness */
+    background-color: white; 
+    margin: 6px auto; /* Center the bars */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+        .navbar-nav{
+            background-color:#8bc349;   
+        }
+        a.navbar-brand{
+            margin:0px 20px;
+        }
+        a.nav-link{
+            text-decoration:none;
+            color:white;
+            padding: 16 26px;
+            margin-left:26px;
+            margin-right:26px;
+        }
+        a.dropdown-item{
+            color:#20b2aa;
+            background:#8bc349;
+        }
+        
+        .carousel{
+            margin-top:-220px;
+            z-index:-1;
+            /* position:absolute; */
+            overflow:hidden;
+            /* margin-bottom:180px; */
+        }
+        .carousel-inner {
+            max-height:690px; /* Set a max height for the carousel */
+        }
+        .carousel-item img {
+           /* object-position:center; */
+           /* object-fit:cover; */
+        }
+        .carousel-caption {
+            bottom: 250px;
+            left:20px;
+            background-color: #8bc349;
+            color: white;
+            padding: 10px;
+        }
+        #caro-2{
+            bottom: 400px;
+            left:20px;
+            background-color: #8bc349;
+            color: white;
+            padding: 10px;
+        }
+        .section-2{
+            background-color: #8bc349;
+        }
+        .info-container{
+            margin-top:-80px;
+        }
+        .info{background:#20b2aa;
+            
+        }
+        .info-img{
+            width:100%;
+            height:auto;
+        }
+        /* .about-us{
+            color:grey;
+        } */
+        .about-usimg1{
+            width:65%;
+            height:auto;
+            object-fit:cover;
+            position:relative;
+            right:-100px;
+        }
+        .about-read{
+            border:none;
+            background:black;
+            color:white;
+            padding:8px;
+        }
+        .about-read:hover{
+            border:none;
+            background:black;
+            color:white;
+            padding:8px;
+            opacity:0.6;
+        }
+        #img-overlap{
+            width:50%;
+            height:auto;
+            top:-70px;
+            position:relative;
+            opacity:0.9;
+        }
+        .section-3{
+            background-color: #8bc349;
+        }
+        .section-4{
+            background-color: #8bc349;
+        }
+        .services{
+            background:#8bc349;
+        }
+        .servicse-info{
+            gap:40px;
+            background:#20b2aa;
+        }
+        .service-img-svg{
+            width:40px;
+            height:40px;
+        }
+        .section-5{
+            background:black;
+        }
+        .title-project{
+            color:white;
+        }
+
+        .swiper-container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            overflow: hidden; /* Prevent slides from overflowing */
+            position: relative;
+        }
+
+        .swiper-slide {
+        position: relative;
+        height: 300px; /* Adjust height as needed */
+        border-radius: 10px;
+        overflow: hidden;
+        }
+
+        .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        }
+
+        /* Zoom effect on hover */
+        .swiper-slide:hover img {
+        transform: scale(1.1);
+        }
+
+        /* Overlay for text */
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Show overlay text on hover */
+        .swiper-slide:hover .overlay {
+        opacity: 1;
+        }
+
+        /* Styling for text inside the overlay */
+        .overlay h2 {
+        font-size: 24px;
+        margin: 0;
+        }
+
+        .overlay p {
+        font-size: 16px;
+        margin-top: 10px;
+        }
+
+        /* Navigation buttons (optional styling) */
+        .swiper-button-next, .swiper-button-prev {
+        color: white;
+        z-index: 10; /* Ensure buttons appear above slides */
+        }
+        .img-swipe{
+            width:100%;
+            height:auto;
+        }
+        
+
+
+    .section-6{
+        gap:140px;
+        background:#8bc349;
+    }
+    .buttn{
+        background:black;
+        color:white;
+        padding:10px;
+        border:none;
+    }
+    .buttn:hover{
+        background:black;
+        color:white;
+        padding:10px;
+        border:none;
+        opacity:0.6;
+    }
+    .section-7{
+        background:#20b2aa;
+    }
+    .socia-media{
+        gap:20px;
+        color:black;
+    }
+    .socia-media>li>a:link{
+        text-decoration:none;
+        color:black;
+    }
+    .socia-media>li>a:active{
+        text-decoration:none;
+        color:black;
+    }
+    .socia-media>li>a:hover{
+        text-decoration:none;
+        color:white;
+    }
+    .socia-media>li>a:visited{
+        text-decoration:none;
+        color:black;
+    }
+    .button-footer-form{
+        background:black;
+        color:white;
+        border:none;
+        padding:10px;
+    }
+    .button-footer-form:hover{
+        background:black;
+        color:white;
+        border:none;
+        padding:10px;
+        opacity:0.6;
+    }
+    .f-info>li>a:link{
+        text-decoration:none;
+        color:black;
+    }
+    .top-scale{
+        width:100%;
+        height:50px;
+    }
+    .bottom-scale{
+        width:100%;
+        height:50px;
+    }
+   
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <div class="col-xs-12 main-top p-1">
+            <div class="main-top-quote">
+                <strong><i>Born To Build</i></strong>
+            </div>
+            <div class="d-flex main-top-info">
+                <ul class="top-info-box1 d-flex ">
+                    <li><i>Give Feedback</i></li>
+                    <li><i>Contact Us</i></li>
+                </ul>
+                <ul class="top-info-box2 d-flex ">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-x-twitter"></i></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+     
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="brand-logo" src="images/deepa-constructions.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="designs.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Designs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="arc.html">Architectural Designs</a></li>
+                            <li><a class="dropdown-item" href="interior.html">Interior Designs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav> 
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel-6.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start"style="width:500px;">
+                        <h5>Laying beams on the back of your dreams</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start" id="caro-2" style="width:500px;">
+                        <h5>Making your vision become a reality</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel12.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start"style="width:500px;">
+                        <h5>Where innovation meets infrastructure</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="section-2  p-5">
+        <div class="container info-container">
+            <div class="row">
+                <div class="col-md-4 info  p-5">
+                    <img class="info-img" src="images/eng-1.jpeg" alt=""><br><br>
+                    <h4>Technology and Innovation</h4>
+                    <p>Building Excellence by Delivering Tailored Construction, Renovation, and Maintenance Solutions</p>
+                </div>
+                <div class="col-md-4 info  p-5">
+                    <img class="info-img" src="images/eng-2.jfif" alt=""><br><br>
+                    <h4>Planning and Designing</h4>
+                    <p>We create, design and build the most wonderful structures</p>
+                </div>
+                <div class="col-md-4 info  p-5">
+                    <img class="info-img" src="images/eng-4.jpg" alt=""><br><br>
+                    <h4>Team Work</h4>
+                    <p>Transforming Spaces by Creating Inspiring Architectural Designs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="container-fluid  p-5">
+            <div class="row">
+                <div class="col-md-6 about-us">
+                    <h2>Leading the way in building and civil construction</h2>
+                    <p><strong>Welcome to Deepa Constructions!</strong> -Your Trusted Partner in Residential and Commercial Construction<br><br>
+                        At Deepa Constructions, we're dedicated to turning visions into reality.
+                        we specialize in crafting high-quality homes and apartments that blend exceptional design, modern functionality, and durable construction. With over 35 years of experience in the construction industry, we are committed to delivering spaces that inspire and elevate the way you live and work.<br><br>
+                        <strong>Our Vision</strong><br><br>
+                        To be the leading provider of innovative, sustainable, and affordable housing solutions, creating communities that our clients are proud to call home.
+                    </p>
+                    <button class="about-read" onclick="redirectToAbout()">Read More </button>
+                </div>
+                <div class="col-md-6">
+                    <img class="about-usimg1" src="images/about-us.jpg" alt=""> 
+                    <img id="img-overlap" src="images/about-us1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image" style="background:#8bc349;">
+        <img class="top-scale" src="images/scale-top.png" alt="">
+    </div>
+    
+    <div class="section-4 p-5">
+        <div class="container-fluid services">
+            <div class="services text-center">
+                <h2>
+                    SERVICES
+                </h2>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 servicse-info d-flex  p-5 " onclick="redirectToServices()">
+                    <div class="services-img  ">
+                        <img class="service-img-svg" src="images/helmet1.svg" alt="">
+                    </div>
+                    <div class="services-text  ">
+                        <h5 class="service-h">General Contracting</h5>
+                        <span>Full-service general construction contracting company specializing in the design, planning, and execution of residential, commercial, and industrial construction projects.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 servicse-info d-flex  p-5" onclick="redirectToServices()">
+                    <div class="services-img">
+                        <img class="service-img-svg" src="images/consultant.svg" alt="">
+                    </div>
+                    <div class="services-text">
+                        <h5>Constuction Consultant</h5>
+                        <span>We help you define the project scope, set realistic budgets, and establish clear timelines.Our consultants guide you through the entire planning phase, identifying potential challenges early and advising on the best course of action.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 servicse-info d-flex  p-5" onclick="redirectToServices()">
+                    <div class="services-img">
+                        <img class="service-img-svg" src="images/interior.svg" alt="">
+                    </div>
+                    <div class="services-text">
+                        <h5>Interior Designing</h5>
+                        <span>we specialize in creating stylish, functional, and personalized spaces through expert interior design. Whether you're building a new home, renovating an existing space, or designing a commercial property</span>
+                    </div>
+                </div>
+                <div class="col-md-4 servicse-info d-flex  p-5" onclick="redirectToServices()">
+                    <div class="services-img">
+                        <img class="service-img-svg" src="images/house-repair.svg" alt="">
+                    </div>
+                    <div class="services-text">
+                        <h5>House Renovation</h5>
+                        <span>we specialize in transforming houses into beautiful, functional spaces through expert renovation services. Whether you're looking to modernize a single room or update your entire home.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 servicse-info d-flex  p-5" onclick="redirectToServices()">
+                    <div class="services-img">
+                        <img class="service-img-svg" src="images/paint-roller.svg" alt="">
+                    </div>
+                    <div class="services-text">
+                        <h5>Tiling And Painting </h5>
+                        <span>we specialize in providing high-quality tiling and painting services that enhance the beauty and functionality of your home or commercial space. </span>
+                    </div>
+                </div>
+                <div class="col-md-4 servicse-info d-flex  p-5" onclick="redirectToServices()">
+                    <div class="services-img">
+                        <img class="service-img-svg" src="images/flooring.svg" alt="">
+                    </div>
+                    <div class="services-text">
+                        <h5>Laminate Flooring</h5>
+                        <span>We use multi-layered synthetic flooring product designed to replicate the appearance of natural materials like hardwood, stone, or tile. It is known for its durability, cost-effectiveness, and ease of installation.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="section-5  pt-5 pb-5">
+        <div class="title-project text-center"><h2>PROJECTS</h2></div><br>
+        <div class="swiper-container ">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img class="img-swipe" src="images/carousel-4.webp" alt="Slide 1">
+                        <div class="overlay">
+                        <h2>Multi-storied Buildings</h2>
+                        <p>Description for Slide 1</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img src="images/carousel-2.jpg" alt="Slide 2">
+                        <div class="overlay">
+                        <h2>Duplex Houses</h2>
+                        <p>Description for Slide 2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img src="images/carousel-8.webp" alt="Slide 3">
+                        <div class="overlay">
+                        <h2>Bungalows</h2>
+                        <p>description</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img src="images/carousel-1.jpeg" alt="Slide 4">
+                        <div class="overlay">
+                        <h2>Independent Houses</h2>
+                        <p>Description for Slide 4</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img src="images/apartment-1.jpg" alt="Slide 5">
+                        <div class="overlay">
+                        <h2>Apartments</h2>
+                        <p>Description for Slide 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="redirectToProjects()">
+                    <div class="slide-content">
+                        <img src="images/commercial-1.jpg" alt="Slide 5">
+                        <div class="overlay">
+                        <h2>Commercial Buildings</h2>
+                        <p>Description for Slide 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination and Navigation -->
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+    </div>
+    <div class="section-6 d-flex p-5">
+        <div class="quote-heading"><h2>We shape our buildings; thereafter, they shape us</h2></div>
+        <div ><button class="buttn" onclick="redirectToGmail()" target="_blank">Request a quick quote</button></div>
+    </div>
+    <div class="section-7 p-5 ">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-4">
+                    <strong>DEEPA CONSTRUCTIONS</strong>
+					<div class="f-text">
+                        We are professionals in the laundry and dry cleaning business, which means we always stay up to date on the latest technologies and cleaning methods.
+                    </div>
+                    <ul class="socia-media d-flex">
+                        <li><a href="https://twitter.com" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank" ><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" ><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+				</div>
+                <div class="col-md-4">
+                    <strong>CONTACTS</strong>
+                    <ul class="f-info">
+                        <li><i class="fa-solid fa-map-pin"></i>No 54 1st Main 2nd Phase W.O.C Road ManjunathNagar Bangalore 560010  </li>
+                        <li><i class="fa-solid fa-business-time"></i> Mon-Sat: 10:00am - 6:00pm</li>
+                        <li><a href="mailto:venugopalkumar9@gmail.com"><i class="fa-solid fa-envelope"></i>venugopalkumar9@gmail.com</a></li>
+                        <li><a href="tel:1(800)765-43-21"><strong><i class="fa-solid fa-square-phone"></i> +91-9845025707</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>QUOTATION</strong>
+                    <form id="subscribeform" method="post" novalidate="novalidate" action="index.html#">
+                        <div class="f-form">
+                            <div class="f-form__label">Contact Us and receive our special offers.</div><br>
+                            <div class="f-form__input"><input type="text" name="email" class="form-control"
+                                    placeholder="Your e-mail address">
+                            </div><br>
+                            <div class="f-form__btn">
+                                <div class="tt-btn"> 
+                                    <button class="button-footer-form" onclick="redirectToGmail()" target="_blank">Get a quote now </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>    
+	</div>
+    <div class="image" style="background:#8bc349;">
+        <img class="bottom-scale" src="images/scale-bottom.png" alt="">
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,         // Default: Show 3 slides at once
+            spaceBetween: 20,         // Space between slides
+            loop: true,               // Enable looping
+            autoplay: {
+            delay: 2500,            // Auto slide every 2.5 seconds
+            disableOnInteraction: false,  // Keep autoplay even when interacting
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            breakpoints: {
+            // When the screen width is >= 1024px
+            1024: {
+                slidesPerView: 3,     // Show 3 slides on desktop
+            },
+            // When the screen width is >= 768px
+            768: {
+                slidesPerView: 2,     // Show 2 slides on tablets
+            },
+            // When the screen width is >= 480px
+            480: {
+                slidesPerView: 1,     // Show 1 slide on mobile
+            },
+            },
+        });
+
+        function redirectToServices() {
+            window.location.href = "services.html";
+        }
+        function redirectToProjects() {
+            window.location.href = "projects.html";
+        }
+        function redirectToAbout() {
+            window.location.href = "about.html";
+        }
+        function redirectToGmail() {
+            window.open("https://mail.google.com", "_blank");
+        }
+    </script>
+
+
+
+
+</body>
+</html>

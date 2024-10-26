@@ -1,0 +1,27 @@
+/* .main-top{
+    display:flex;
+    border:1px solid red;
+    justify-content:space-between;
+}
+.main-top-list{
+    display:flex;
+    border:1px solid red;
+    justify-content:space-between;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0; /* Optional: Removes any default padding from the left */
+}
+.main-top-info{
+    gap:40px;
+}
+.top-info-box1{
+    gap:20px;
+}
+.top-info-box2{
+    gap:20px;
+}
+.brand-logo{
+    width:200px;
+    height:150px;
+} */
